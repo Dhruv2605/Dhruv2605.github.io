@@ -40,15 +40,15 @@
     <!-- Hero Section -->
     <header class="hero" id="about">
         <div class="hero-content fade-in">
-            <p class="greeting">Hi, I'm</p>
+            <p class="greeting" style="letter-spacing: 2px; text-transform: uppercase;">Hi, I'm</p>
             <h2 class="name-title">Dhruv Bhogaonkar</h2>
-            <h3 class="role-title">M.Tech Computer Technology @ IIT Delhi ('24-'26)</h3>
-            <p class="hero-description" style="margin-bottom: 1rem;">
-                <strong>GATE CSE 2024 Rank: 468</strong>
+            <h3 class="role-title" style="font-size: 1.5rem; margin-bottom: 1rem; color: #cbd5e1;">Incoming SWE @ IBM-ISDL | M.Tech @ IIT Delhi ('24-'26)</h3>
+            <p class="hero-description" style="margin-bottom: 2rem;">
+                <span style="background: rgba(249, 115, 22, 0.1); color: var(--accent-color); padding: 5px 15px; border-radius: 20px; font-weight: 600; font-size: 0.9rem; border: 1px solid var(--accent-color);">AIR 468 • GATE CSE 2024</span>
             </p>
-            <p class="hero-description">
-                Passionate about <strong>OS Internals</strong>, <strong>Machine Learning</strong>, and <strong>Cloud Architecture</strong>. 
-                I build robust low-level systems, explore data-driven algorithms, and engineer scalable backends.
+            <p class="hero-description" style="margin-bottom: 2.5rem; line-height: 1.6; font-size: 1.1rem; color: #94a3b8;">
+                I have a strong interest in <strong>systems</strong>, <strong>Linux internals</strong>, and <strong>performance-critical software</strong>. I enjoy working close to the OS-hardware boundary, debugging complex issues, and understanding how systems behave under real-world workloads.<br><br>
+                My experience spans both core systems engineering and data-driven problem solving, ranging from Linux kernel scheduling mechanisms to ML pipelines and classification models.
             </p>
             <div class="hero-cta">
                 <a href="#projects" class="primary-btn">View My Work <i class="fas fa-arrow-down"></i></a>
@@ -66,14 +66,14 @@
             
             <!-- Education -->
             <div class="glass-panel">
-                <h3 style="font-size: 1.5rem; margin-bottom: 1rem;"><i class="fas fa-graduation-cap" style="color: var(--accent-color);"></i> Education</h3>
+                <h3 style="font-size: 1.5rem; margin-bottom: 1.5rem;"><i class="fas fa-graduation-cap" style="color: var(--accent-color);"></i> Education</h3>
                 <ul style="list-style: none; color: var(--text-secondary);">
-                    <li style="margin-bottom: 1rem;">
-                        <strong style="color: var(--text-primary);">M.Tech Computer Technology</strong><br>
+                    <li style="margin-bottom: 1.5rem; border-left: 2px solid var(--accent-color); padding-left: 15px;">
+                        <strong style="color: var(--text-primary); font-size: 1.1rem;">M.Tech Computer Technology</strong><br>
                         IIT Delhi (2024 - 2026) • CGPA: 7.9
                     </li>
-                    <li style="margin-bottom: 1rem;">
-                        <strong style="color: var(--text-primary);">B.Tech Electronics and Telecommunication</strong><br>
+                    <li style="margin-bottom: 1rem; border-left: 2px solid rgba(255,255,255,0.1); padding-left: 15px;">
+                        <strong style="color: var(--text-primary); font-size: 1.1rem;">B.Tech Electronics & Telecomm.</strong><br>
                         Pune University (Graduated 2024) • CGPA: 8.08
                     </li>
                 </ul>
@@ -81,36 +81,43 @@
 
             <!-- Experience & Leadership -->
             <div class="glass-panel">
-                <h3 style="font-size: 1.5rem; margin-bottom: 1rem;"><i class="fas fa-briefcase" style="color: var(--accent-color);"></i> Experience</h3>
+                <h3 style="font-size: 1.5rem; margin-bottom: 1.5rem;"><i class="fas fa-briefcase" style="color: var(--accent-color);"></i> Experience</h3>
                 <ul style="list-style: none; color: var(--text-secondary);">
-                    <li style="margin-bottom: 1rem;">
-                        <strong style="color: var(--text-primary);">IIT Delhi Thesis (GPU Compiler)</strong><br>
+                    <li style="margin-bottom: 1.2rem; border-left: 2px solid var(--accent-color); padding-left: 15px;">
+                        <strong style="color: var(--text-primary); font-size: 1.1rem;">Incoming Software Engineer</strong><br>
+                        IBM-ISDL
+                    </li>
+                    <li style="margin-bottom: 1.2rem; border-left: 2px solid rgba(255,255,255,0.1); padding-left: 15px;">
+                        <strong style="color: var(--text-primary); font-size: 1.1rem;">IIT Delhi Thesis (GPU Compiler)</strong><br>
                         Architecting an LLVM-based compiler for a Custom SIMT GPU ISA (July 2025 - Present).
                     </li>
-                    <li style="margin-bottom: 1rem;">
-                        <strong style="color: var(--text-primary);">Teaching Assistant</strong><br>
-                        ELL7282: Application Specific Computer Architecture.
+                    <li style="margin-bottom: 1.2rem; border-left: 2px solid rgba(255,255,255,0.1); padding-left: 15px;">
+                        <strong style="color: var(--text-primary); font-size: 1.1rem;">Software Engineering Intern</strong><br>
+                        JPMorgan Chase & Co. (Jul 2022 - Jan 2023)
                     </li>
-                    <li style="margin-bottom: 1rem;">
-                        <strong style="color: var(--text-primary);">Student Coordinator</strong><br>
-                        Virtual Labs, IIT Bombay.
+                    <li style="margin-bottom: 1rem; border-left: 2px solid rgba(255,255,255,0.1); padding-left: 15px;">
+                        <strong style="color: var(--text-primary); font-size: 1.1rem;">Teaching Assistant</strong><br>
+                        ELL7282: Application Specific Computer Architecture.
                     </li>
                 </ul>
             </div>
 
             <!-- Skills -->
             <div class="glass-panel">
-                <h3 style="font-size: 1.5rem; margin-bottom: 1rem;"><i class="fas fa-code" style="color: var(--accent-color);"></i> Technical Skills</h3>
-                <div style="display: flex; flex-wrap: wrap; gap: 0.5rem;">
-                    <span class="tag">C</span>
-                    <span class="tag">C++</span>
+                <h3 style="font-size: 1.5rem; margin-bottom: 1.5rem;"><i class="fas fa-code" style="color: var(--accent-color);"></i> Technical Skills</h3>
+                <div style="display: flex; flex-wrap: wrap; gap: 0.6rem;">
+                    <span class="tag">C / C++</span>
                     <span class="tag">Python</span>
+                    <span class="tag">Flask</span>
                     <span class="tag">SQL</span>
+                    <span class="tag">JavaScript</span>
+                    <span class="tag">HTML / CSS</span>
                     <span class="tag">Linux Kernel</span>
-                    <span class="tag">RISC-V</span>
+                    <span class="tag">RISC-V Assembly</span>
                     <span class="tag">Azure</span>
                     <span class="tag">Docker</span>
                     <span class="tag">LLVM</span>
+                    <span class="tag">Git</span>
                 </div>
             </div>
             
