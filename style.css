@@ -3,8 +3,8 @@
     --bg-color: #0f172a;
     --text-primary: #f8fafc;
     --text-secondary: #94a3b8;
-    --accent-color: #38bdf8;
-    --accent-glow: rgba(56, 189, 248, 0.4);
+    --accent-color: #f97316;
+    --accent-glow: rgba(249, 115, 22, 0.4);
     --glass-bg: rgba(30, 41, 59, 0.7);
     --glass-border: rgba(255, 255, 255, 0.1);
 }
@@ -45,7 +45,7 @@ body {
 .orb-1 {
     width: 400px;
     height: 400px;
-    background: #4f46e5;
+    background: #ea580c; /* Deep Orange */
     top: -100px;
     left: -100px;
 }
@@ -53,7 +53,7 @@ body {
 .orb-2 {
     width: 500px;
     height: 500px;
-    background: #0ea5e9;
+    background: #f59e0b; /* Amber */
     bottom: -200px;
     right: -100px;
     animation-delay: -5s;
@@ -62,7 +62,7 @@ body {
 .orb-3 {
     width: 300px;
     height: 300px;
-    background: #8b5cf6;
+    background: #ef4444; /* Red-Orange */
     top: 40%;
     left: 30%;
     opacity: 0.3;
@@ -99,7 +99,7 @@ nav {
     font-weight: 800;
     font-size: 1.5rem;
     letter-spacing: -0.5px;
-    background: linear-gradient(to right, #38bdf8, #818cf8);
+    background: linear-gradient(to right, #f97316, #fbbf24);
     -webkit-background-clip: text;
     color: transparent;
 }
@@ -285,7 +285,7 @@ nav {
 }
 
 .tag {
-    background: rgba(56, 189, 248, 0.1);
+    background: rgba(249, 115, 22, 0.1);
     color: var(--accent-color);
     padding: 0.3rem 0.8rem;
     border-radius: 20px;
