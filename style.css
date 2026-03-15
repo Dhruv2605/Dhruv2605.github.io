@@ -131,11 +131,67 @@ nav {
     border: 1px solid var(--glass-border);
     font-weight: 600;
     transition: all 0.3s ease;
+    display: inline-block;
 }
 
 .github-btn:hover {
     background: rgba(255, 255, 255, 0.2);
     transform: translateY(-2px);
+}
+
+/* Mobile Navigation Toggle (Pure CSS) */
+.nav-toggle {
+    display: none;
+}
+
+.nav-toggle-label {
+    display: none;
+    cursor: pointer;
+    padding: 1rem;
+}
+
+.nav-toggle-label span,
+.nav-toggle-label span::before,
+.nav-toggle-label span::after {
+    display: block;
+    background: var(--text-primary);
+    height: 3px;
+    width: 25px;
+    border-radius: 2px;
+    position: relative;
+    transition: all 0.3s ease-in-out;
+}
+
+.nav-toggle-label span::before,
+.nav-toggle-label span::after {
+    content: '';
+    position: absolute;
+}
+
+.nav-toggle-label span::before {
+    bottom: 8px;
+}
+
+.nav-toggle-label span::after {
+    top: 8px;
+}
+
+.nav-toggle:checked ~ .nav-links {
+    display: flex;
+}
+
+.nav-toggle:checked ~ .nav-toggle-label span {
+    background: transparent;
+}
+
+.nav-toggle:checked ~ .nav-toggle-label span::before {
+    transform: rotate(45deg);
+    bottom: 0;
+}
+
+.nav-toggle:checked ~ .nav-toggle-label span::after {
+    transform: rotate(-45deg);
+    top: 0;
 }
 
 /* Hero Section */
@@ -362,17 +418,39 @@ footer {
 }
 
 /* Responsive */
-@media (max-width: 768px) {
-    .name-title {
-        font-size: 3.5rem;
+@media (max-width: 900px) {
+    .nav-toggle-label {
+        display: block;
+        z-index: 1001; /* Above the expanded menu */
     }
-    .role-title {
-        font-size: 1.5rem;
+
+    .logo {
+        font-size: 1.2rem; /* Ensure logo fits with hamburger */
     }
-    .projects-grid {
-        grid-template-columns: 1fr;
-    }
+
     .nav-links {
         display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background: rgba(15, 23, 42, 0.95);
+        backdrop-filter: blur(15px);
+        flex-direction: column;
+        padding: 2rem 0;
+        border-bottom: 1px solid var(--glass-border);
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    }
+    
+    .name-title {
+        font-size: 3rem;
+    }
+    
+    .role-title {
+        font-size: 1.3rem;
+    }
+    
+    .projects-grid {
+        grid-template-columns: 1fr;
     }
 }
