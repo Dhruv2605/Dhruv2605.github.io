@@ -202,11 +202,12 @@ nav {
     justify-content: center;
     text-align: center;
     padding: 0 2rem;
-    padding-top: 80px;
+    padding-top: 120px; /* Increased to account for sticky nav */
 }
 
 .hero-content {
     max-width: 800px;
+    margin-top: 2rem; /* Added margin for extra breathing room */
 }
 
 .greeting {
@@ -448,6 +449,10 @@ footer {
     
     .role-title {
         font-size: 1.3rem;
+    }
+    
+    .hero {
+        padding-top: 140px; /* Even more padding for grouped mobile nav */
     }
     
     .projects-grid {
